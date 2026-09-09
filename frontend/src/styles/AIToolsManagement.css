@@ -1,0 +1,120 @@
+/* AI Tools Management Container */
+.ai-tools-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+/* AI Tools Form Section */
+.ai-tools-form-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+.ai-tools-form-section h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.ai-tool-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* AI Tools List Section */
+.ai-tools-list-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ai-tools-list-section h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+/* AI Tools Table */
+.ai-tools-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ai-tools-table thead {
+  background-color: #667eea;
+}
+
+.ai-tools-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: white;
+}
+
+.ai-tools-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tool-row:hover {
+  background-color: #f0f4ff;
+}
+
+/* Status Select */
+.status-select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.status-select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .ai-tools-container {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-tools-form-section {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .ai-tools-container {
+    gap: 1rem;
+  }
+
+  .ai-tools-form-section,
+  .ai-tools-list-section {
+    padding: 1.5rem;
+  }
+
+  .ai-tools-table {
+    font-size: 0.9rem;
+  }
+
+  .ai-tools-table th,
+  .ai-tools-table td {
+    padding: 0.75rem;
+  }
+}
